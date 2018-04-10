@@ -1,0 +1,37 @@
+/*  */
+body {
+  font-family: 'Slabo 27px', serif; }
+
+.header-container {
+  background: black;
+  height: 300px; }
+
+.vc {
+  background-color: white;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .vc .vc-body {
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF; }
+  .vc .vc-body-image {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+    flex: 1; }
+  .vc .vc-body-info {
+    flex: 4;
+    padding: 20px 10px 10px 45px; }
+  .vc .vcb-title {
+    font-size: 30px; }
+  .vc .vc-footer {
+    flex: 1;
+    background: #363535;
+    height: 50px; }
+
+/* Utilities */
+.space-top-xl {
+  top: 100px; }

@@ -1,0 +1,55 @@
+/*  */
+body {
+    font-family: 'Slabo 27px', serif;
+}
+
+// Variables
+$header-container-height: 300px;
+
+.header-container {
+    background: black;
+    height: $header-container-height;
+}
+
+.vc {
+    background-color: white;
+    height: $header-container-height * 2/3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .vc-body {
+        flex: 5;
+        display: flex;
+        flex-direction: row;
+        background: #FFFFFF;
+    }
+    
+    .vc-body-image {
+        position: relative;
+        margin-left: 40px;
+        margin-top: 40px;
+        flex: 1;
+    }
+    
+    .vc-body-info {
+        flex: 4;
+        padding: 20px 10px 10px 45px;
+    }
+    
+    .vcb-title {
+        font-size: 30px;
+    }
+    
+    
+    .vc-footer {
+        flex: 1;
+        background: #363535;
+        height: 50px;
+    }
+}
+
+/* Utilities */
+.space-top-xl {
+    top: 100px;
+}
