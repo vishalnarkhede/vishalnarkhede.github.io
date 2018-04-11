@@ -9,14 +9,17 @@ $header-container-height: 300px;
 .header-container {
     background: black;
     height: $header-container-height;
+    box-shadow: 5px 5px 10px #888888;
 }
 
 .vc {
     background-color: white;
-    height: $header-container-height * 2/3;
+    height: 200px;
     position: relative;
     display: flex;
     flex-direction: column;
+    border-top: 10px solid #D9AE34;
+    // outline: 10px solid #C0BCBC;
 
     .vc-body {
         flex: 5;
@@ -27,14 +30,14 @@ $header-container-height: 300px;
     
     .vc-body-image {
         position: relative;
-        margin-left: 40px;
+        margin-left: 28px;
         margin-top: 40px;
         flex: 1;
     }
     
     .vc-body-info {
-        flex: 4;
-        padding: 20px 10px 10px 45px;
+        flex: 2;
+        padding: 20px 10px 10px 15px;
     }
     
     .vcb-title {
@@ -49,6 +52,19 @@ $header-container-height: 300px;
     }
 }
 
+.cv-content {
+    margin-top: 60px;
+
+    h2 {
+        color: #630909;
+        border-bottom: 1px solid black;
+    }
+
+    .cv-content-section-l1 {
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+}
 /* Utilities */
 .space-top-xl {
     top: 100px;

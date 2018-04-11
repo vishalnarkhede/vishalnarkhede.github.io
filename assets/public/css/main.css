@@ -4,14 +4,16 @@ body {
 
 .header-container {
   background: black;
-  height: 300px; }
+  height: 300px;
+  box-shadow: 5px 5px 10px #888888; }
 
 .vc {
   background-color: white;
   height: 200px;
   position: relative;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  border-top: 10px solid #D9AE34; }
   .vc .vc-body {
     flex: 5;
     display: flex;
@@ -19,18 +21,27 @@ body {
     background: #FFFFFF; }
   .vc .vc-body-image {
     position: relative;
-    margin-left: 40px;
+    margin-left: 28px;
     margin-top: 40px;
     flex: 1; }
   .vc .vc-body-info {
-    flex: 4;
-    padding: 20px 10px 10px 45px; }
+    flex: 2;
+    padding: 20px 10px 10px 15px; }
   .vc .vcb-title {
     font-size: 30px; }
   .vc .vc-footer {
     flex: 1;
     background: #363535;
     height: 50px; }
+
+.cv-content {
+  margin-top: 60px; }
+  .cv-content h2 {
+    color: #630909;
+    border-bottom: 1px solid black; }
+  .cv-content .cv-content-section-l1 {
+    margin-left: 60px;
+    margin-top: 30px; }
 
 /* Utilities */
 .space-top-xl {
