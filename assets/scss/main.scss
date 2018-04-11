@@ -1,6 +1,7 @@
 /*  */
 body {
     font-family: 'Slabo 27px', serif;
+    height: 500px;
 }
 
 // Variables
@@ -12,6 +13,11 @@ $header-container-height: 300px;
     box-shadow: 5px 5px 10px #888888;
 }
 
+.pro-cv-container {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
 .vc {
     background-color: white;
     height: 200px;
@@ -19,25 +25,30 @@ $header-container-height: 300px;
     display: flex;
     flex-direction: column;
     border-top: 10px solid #D9AE34;
+    border-bottom: 3px solid #D9AE34;
+    border-right: 3px solid #D9AE34;
+    border-left: 3px solid #D9AE34;
+    margin-left: -20px;
+    margin-right: -20px;
+    // box-shadow: 3px 4px 12px #888888;
     // outline: 10px solid #C0BCBC;
 
     .vc-body {
         flex: 5;
         display: flex;
         flex-direction: row;
-        background: #FFFFFF;
     }
     
     .vc-body-image {
         position: relative;
-        margin-left: 28px;
-        margin-top: 40px;
-        flex: 1;
+        margin-left: 0px;
+        margin-top: 0px;
+        flex: 2;
     }
     
     .vc-body-info {
         flex: 2;
-        padding: 20px 10px 10px 15px;
+        padding: 29px 10px 10px 15px;
     }
     
     .vcb-title {
@@ -53,16 +64,41 @@ $header-container-height: 300px;
 }
 
 .cv-content {
-    margin-top: 60px;
+    margin-top: 30px;
 
     h2 {
         color: #630909;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid #d4c8c8;
+
+        .subtext {
+            font-size: 20px;
+        }
     }
 
     .cv-content-section-l1 {
-        margin-left: 60px;
-        margin-top: 30px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+
+.terminal {
+    color: #20DF1D;
+    font-family: 'Courier New', Courier, monospace;
+    background: black;
+    font-size: 15px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    .terminal-command {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .terminal-command-result {
+        border: 4px double #D8B619;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #B4DD0E;
     }
 }
 /* Utilities */
