@@ -2,10 +2,11 @@
 body {
     font-family: 'Slabo 27px', serif;
     height: 500px;
+    font-size: 13px;
 }
 
 // Variables
-$header-container-height: 300px;
+$header-container-height: 200px;
 
 .header-container {
     background: black;
@@ -20,16 +21,16 @@ $header-container-height: 300px;
 
 .vc {
     background-color: white;
-    height: 200px;
+    height: 150px;
     position: relative;
     display: flex;
     flex-direction: column;
     border-top: 10px solid #D9AE34;
     border-bottom: 3px solid #D9AE34;
-    border-right: 3px solid #D9AE34;
-    border-left: 3px solid #D9AE34;
-    margin-left: -20px;
-    margin-right: -20px;
+    // border-right: 3px solid #D9AE34;
+    // border-left: 3px solid #D9AE34;
+    // margin-left: -20px;
+    // margin-right: -20px;
     // box-shadow: 3px 4px 12px #888888;
     // outline: 10px solid #C0BCBC;
 
@@ -43,12 +44,12 @@ $header-container-height: 300px;
         position: relative;
         margin-left: 0px;
         margin-top: 0px;
-        flex: 2;
+        flex: 1;
     }
     
     .vc-body-info {
         flex: 2;
-        padding: 29px 10px 10px 15px;
+        padding: 15px 10px 10px 15px;
     }
     
     .vcb-title {
@@ -85,7 +86,7 @@ $header-container-height: 300px;
     color: #20DF1D;
     font-family: 'Courier New', Courier, monospace;
     background: black;
-    font-size: 15px;
+    font-size: 13px;
     max-height: 100vh;
     overflow-y: scroll;
     .terminal-command {
@@ -105,3 +106,9 @@ $header-container-height: 300px;
 .space-top-xl {
     top: 100px;
 }
+
+.space-top-med {
+    margin-top: 20px;
+}
+
+// Progress bar
